@@ -1,0 +1,93 @@
+.container {
+  padding: 24px;
+}
+
+.card {
+  height: 100%;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.inactive {
+  opacity: 0.7;
+  background-color: #fafafa;
+}
+
+.inactive::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.8) 0%,
+    rgba(255,255,255,0.6) 100%
+  );
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  margin-right: 16px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #3f51b5 0%, #2196f3 100%);
+}
+
+.contactInfo {
+  margin: 16px 0;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.contactItem svg {
+  margin-right: 8px;
+  font-size: 18px;
+  color: #3f51b5;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.switchContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.switchContainer p {
+  margin-right: 16px;
+}
+
+.addButton {
+  margin-top: 16px !important;
+  align-self: flex-end;
+}
